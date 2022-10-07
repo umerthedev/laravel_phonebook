@@ -13,7 +13,7 @@
                                   <div class="courses-thumb">
                                        <div class="courses-top">
                                             <div class="courses-image">
-                                                 <img src="images/courses-image1.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/courses-image1.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="courses-date">
                                                  <span><i class="fa fa-calendar"></i> 12 / 7 / 2018</span>
@@ -28,11 +28,11 @@
 
                                        <div class="courses-info">
                                             <div class="courses-author">
-                                                 <img src="images/author-image1.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/author-image1.jpg" class="img-responsive" alt="">
                                                  <span>Mark Wilson</span>
                                             </div>
                                             <div class="courses-price">
-                                                 <a href="#"><span>USD 25</span></a>
+                                                 <a href="#"><span>Show Details</span></a>
                                             </div>
                                        </div>
                                   </div>
@@ -44,7 +44,7 @@
                                   <div class="courses-thumb">
                                        <div class="courses-top">
                                             <div class="courses-image">
-                                                 <img src="images/courses-image2.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/courses-image2.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="courses-date">
                                                  <span><i class="fa fa-calendar"></i> 20 / 7 / 2018</span>
@@ -59,11 +59,11 @@
 
                                        <div class="courses-info">
                                             <div class="courses-author">
-                                                 <img src="images/author-image2.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/author-image2.jpg" class="img-responsive" alt="">
                                                  <span>Jessica</span>
                                             </div>
                                             <div class="courses-price">
-                                                 <a href="#"><span>USD 80</span></a>
+                                                 <a href="#"><span>Show Details</span></a>
                                             </div>
                                        </div>
                                   </div>
@@ -75,7 +75,7 @@
                                   <div class="courses-thumb">
                                        <div class="courses-top">
                                             <div class="courses-image">
-                                                 <img src="images/courses-image3.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/courses-image3.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="courses-date">
                                                  <span><i class="fa fa-calendar"></i> 15 / 8 / 2018</span>
@@ -90,11 +90,11 @@
 
                                        <div class="courses-info">
                                             <div class="courses-author">
-                                                 <img src="images/author-image3.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/author-image3.jpg" class="img-responsive" alt="">
                                                  <span>Catherine</span>
                                             </div>
                                             <div class="courses-price free">
-                                                 <a href="#"><span>Free</span></a>
+                                                 <a href="#"><span>Show Details</span></a>
                                             </div>
                                        </div>
                                   </div>
@@ -106,7 +106,7 @@
                                   <div class="courses-thumb">
                                        <div class="courses-top">
                                             <div class="courses-image">
-                                                 <img src="images/courses-image4.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/courses-image4.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="courses-date">
                                                  <span><i class="fa fa-calendar"></i> 10 / 8 / 2018</span>
@@ -121,11 +121,11 @@
 
                                        <div class="courses-info">
                                             <div class="courses-author">
-                                                 <img src="images/author-image1.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/author-image1.jpg" class="img-responsive" alt="">
                                                  <span>Mark Wilson</span>
                                             </div>
                                             <div class="courses-price">
-                                                 <a href="#"><span>USD 45</span></a>
+                                                 <a href="#"><span>Show Details</span></a>
                                             </div>
                                        </div>
                                   </div>
@@ -137,7 +137,7 @@
                                   <div class="courses-thumb">
                                        <div class="courses-top">
                                             <div class="courses-image">
-                                                 <img src="images/courses-image5.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/courses-image5.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="courses-date">
                                                  <span><i class="fa fa-calendar"></i> 5 / 10 / 2018</span>
@@ -152,11 +152,11 @@
 
                                        <div class="courses-info">
                                             <div class="courses-author">
-                                                 <img src="images/author-image2.jpg" class="img-responsive" alt="">
+                                                 <img src="home_assets/images/author-image2.jpg" class="img-responsive" alt="">
                                                  <span>Jessica</span>
                                             </div>
                                             <div class="courses-price free">
-                                                 <a href="#"><span>Free</span></a>
+                                                 <a href="#"><span>Show Details</span></a>
                                             </div>
                                        </div>
                                   </div>

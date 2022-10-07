@@ -29,4 +29,6 @@ Route::middleware([
 Route::get('/',[HomeController::class,'home']);
 
 Route::get('/Home',[HomeController::class,'index']);
+Route::get('/add_contact',[HomeController::class,'add_contact']);
+Route::post('/upload_contact',[HomeController::class,'upload_contact']);
 

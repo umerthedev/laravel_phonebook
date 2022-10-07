@@ -15,6 +15,12 @@
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css" integrity="sha512-a+PObWRxNVh4HZR9wijCGj84JgJ/QhZ8dET09REfYz2clUBjKYhGbOmdy9KEHilYKgbMSIHNQEsonv/r75mHXw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.rtl.min.css" integrity="sha512-CY4dHumm98hWuKod7pZpSiKkIvof7Av7OBmcKxqZuvggvym+XKifAEFi/5rK6I5PFUiDOdUFP7H2jjRNaZ2/7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-reboot.min.css" integrity="sha512-OGIUn1RUUYIrr7oDnv8nV5QHFXj1fGDmT+qpcVvDdxkzsnQYhiikXow06DDNneSYAeLVShIuVCCAsdLv4SPkvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!-- Icons -->
 <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
 <link href="{{ URL::asset("admin_assets/assets/media/favicons/favicon.png")}}">
