@@ -26,9 +26,17 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/',[HomeController::class,'home']);
+Route::get('/',[HomeController::class,'Home']);
 
 Route::get('/Home',[HomeController::class,'index']);
+//add contact
 Route::get('/add_contact',[HomeController::class,'add_contact']);
 Route::post('/upload_contact',[HomeController::class,'upload_contact']);
+Route::get('/show_contact',[HomeController::class,'show_contact']);
+//edit contact
+Route::get('/edit_con/{id}',[HomeController::class,'edit_con']);
+Route::post('/update_contact/{id}',[HomeController::class,'update_contact']);
+//delete contact
+Route::get('/delete_con/{id}',[HomeController::class,'delete_con']);
+
 

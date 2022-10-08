@@ -68,43 +68,51 @@
 
                                     </div>
                                 @endif
-                                <h1 class="m-4 " style="text-align: center">Add Contact Info</h1>
+                                <h1 class="m-4 " style="text-align: center">Edit Contact Info</h1>
                                 <h1 class="m-4 " id="flashmsg" style="text-align: center"></h1>
 
 
-                                <form id="formSubmit">
+                                <form method="POST" action="{{ url('update_contact', $contact->id) }}"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <!-- Basic Elements -->
                                     <div class="">
                                         <div class=" mb-2">
                                             <label class="form-label" for="example-text-input">Name</label>
                                             <input type="text" class="form-control" id="example-text-input"
-                                                name="name" placeholder="Full Name" required>
+                                                name="name" placeholder="Full Name" value="{{ $contact->name }}"
+                                                required>
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Email</label>
                                             <input type="email" class="form-control" id="example-email-input"
-                                                name="email" placeholder="Email">
+                                                name="email" placeholder="Email" value="{{ $contact->email }}">
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Address</label>
                                             <input type="text" class="form-control" id="example-email-input"
-                                                name="address" placeholder="Optional">
+                                                name="address" placeholder="Optional" value="{{ $contact->address }}">
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Phone</label>
                                             <input type="text" class="form-control" id="example-email-input"
-                                                name="phone" placeholder="Phone number" required>
+                                                name="phone" placeholder="Phone number" required
+                                                value="{{ $contact->phone }}">
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Facebook ID</label>
                                             <input type="text" class="form-control" id="example-email-input"
-                                                name="fb_id" placeholder="Optional">
+                                                name="fb_id" placeholder="Optional" value="{{ $contact->fb_id }}">
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Instagram ID</label>
                                             <input type="text" class="form-control" id="example-email-input"
-                                                name="ig_id" placeholder="Optional">
+                                                name="ig_id" placeholder="Optional" value="{{ $contact->ig_id }}">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label" for="example-email-input">Old image</label>
+                                            <img height="150px" width="150px"
+                                                src="{{ url('contactimage/' . $contact->image) }}" alt="">
                                         </div>
 
                                         <div class="row push">
@@ -112,13 +120,13 @@
                                                 <div class="mb-2">
                                                     <label class="form-label" for="example-file-input">File
                                                         Input</label>
-                                                    <input class="form-control" type="file" name="file" required>
+                                                    <input class="form-control" type="file" name="file">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <button type="submit" class="btn btn-secondary bg-dark mb-4"
-                                            id="btnSubmit">Submit</button>
+                                            id="btnSubmit">Update</button>
 
                                 </form>
 
@@ -127,36 +135,7 @@
                         </div>
                     </div>
 
-                    <script>
-                        $(document).ready(function() {
-                            $("#formSubmit").submit(function(event) {
-                                event.preventDefault();
-                                var form = $("#formSubmit")[0];
-                                var data = new FormData(form);
-                                $("#btnSubmit").prop("disabled", true);
-                                $.ajax({
-                                    type: "POST",
-                                    enctype: 'multipart/form-data',
-                                    url: "{{ url('upload_contact') }}",
-                                    data: data,
-                                    processData: false,
-                                    contentType: false,
-                                    cache: false,
-                                    success: function(data) {
-                                        $("#flashmsg").text(data.success);
-                                        $("#btnSubmit").prop("disabled", false);
-                                        $("input[type=text],input[type=email],input[type=file]").val("");
 
-                                    },
-                                    error: function(e) {
-                                        $("#flashmsg").text(e.responseText);
-                                        $("#btnSubmit").prop("disabled", false);
-                                        $("input[type=text],input[type=email]").val("");
-                                    }
-                                });
-                            })
-                        })
-                    </script>
 
 
 
