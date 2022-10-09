@@ -23,12 +23,12 @@
                         <i class="fa fa-users fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Registered Users</div>
+                    <div class="text-muted mb-3">Total Contacts</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
                     <a class="fw-medium" href="javascript:void(0)">
-                        View all users
+                        Total Contacts
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
                 </div>
@@ -41,12 +41,12 @@
                         <i class="fa fa-level-up-alt fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Total Doctors</div>
+                    <div class="text-muted mb-3">Favorite Contacts</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
                     <a class="fw-medium" href="">
-                        View All Doctors
+                        Favorite Contacts
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
                 </div>
@@ -59,12 +59,12 @@
                         <i class="fa fa-chart-line fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Total Specialist Category</div>
+                    <div class="text-muted mb-3"></div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
                     <a class="fw-medium" href="">
-                        View all Category
+                        Lifetime Asscess
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
                 </div>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
                     <a class="fw-medium" href="{{ url('show_appointment') }}">
-                        View All Appointments
+                        Safe & Secure
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
                 </div>

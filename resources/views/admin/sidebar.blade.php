@@ -78,6 +78,12 @@
                         {{-- <span class="nav-main-link-badge badge rounded-pill bg-primary"></span> --}}
                     </a>
                 </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="{{ url('favorite_contacts') }}">
+                        <span class="nav-main-link-name">Favorite Contacts</span>
+                        {{-- <span class="nav-main-link-badge badge rounded-pill bg-primary"></span> --}}
+                    </a>
+                </li>
 
             </ul>
             </li>

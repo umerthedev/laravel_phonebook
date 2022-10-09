@@ -38,5 +38,8 @@ Route::get('/edit_con/{id}',[HomeController::class,'edit_con']);
 Route::post('/update_contact/{id}',[HomeController::class,'update_contact']);
 //delete contact
 Route::get('/delete_con/{id}',[HomeController::class,'delete_con']);
-
+//search contact
+Route::get('/search_contact',[HomeController::class,'search_contact']);
+//favorite_contacts
+Route::get('/favorite_contacts',[HomeController::class,'favorite_contacts']);
 

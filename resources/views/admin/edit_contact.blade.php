@@ -118,8 +118,8 @@
                                         <div class="row push">
                                             <div class="col-lg-8 col-xl-5 overflow-hidden">
                                                 <div class="mb-2">
-                                                    <label class="form-label" for="example-file-input">File
-                                                        Input</label>
+                                                    <label class="form-label" for="example-file-input">Upload New
+                                                        Image</label>
                                                     <input class="form-control" type="file" name="file">
                                                 </div>
                                             </div>

@@ -86,4 +86,38 @@ class HomeController extends Controller
         $contact->delete();
         return redirect()->back()->with('message', 'Contact Deleted Successfully');
     }
+    //search contact
+    public function search_contact(Request $request)
+    {
+        $output = '';
+        $user = Auth::user();
+        $search = $request->search;
+        $contact = contactlist::where('user_id',$user->id)->where('name','like','%'.$search.'%')->orWhere('email','like','%'.$search.'%')->orWhere('phone','like','%'.$search.'%')->orWhere('fb_id','like','%'.$search.'%')->orWhere('ig_id','like','%'.$search.'%')->orWhere('address','like','%'.$search.'%')->get();
+        
+        foreach ($contact as $contactlist) {
+            $output.=             
+            '<tr>
+            <td>'.$contactlist->name.'</td>
+            <td>'.$contactlist->phone.'</td>
+            <td>'.$contactlist->email.'</td>
+            <td>'.$contactlist->fb_id.'</td>
+            <td>'.$contactlist->ig_id.'</td>
+            <td>'.$contactlist->address.'</td>
+            <td><img src="'.asset('contactimage/'.$contactlist->image).'" alt="" style="width: 50px; height: 50px;">
+            </td>
+            <td>
+            <a href="'.url('edit_con',$contactlist->id).'" class="btn btn-primary">Edit</a>
+            <a href="'.url('delete_con',$contactlist->id).'" class="btn btn-danger">Delete</a>
+            </td>                       
+            </tr>';
+        }
+
+        return response()->json($output);
+    }
+    //favorite_contacts_show
+    public function favorite_contacts()
+    {
+        
+        return view('admin.favorite_contacts');
+    }
 }

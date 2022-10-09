@@ -8,8 +8,9 @@
                         data-action="header_search_off">
                         <i class="fa fa-fw fa-times-circle"></i>
                     </button>
-                    <input type="text" class="form-control border-0" placeholder="Search or hit ESC.."
-                        id="page-header-search-input" name="page-header-search-input">
+                    <input type="text" class="form-control border-0"
+                        placeholder="Search by Name, Email, Phone, FB_ID, IG_ID " id="datatable-search-input"
+                        name="page-header-search-input">
                 </div>
             </form>
         </div>
