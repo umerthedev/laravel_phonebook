@@ -3,6 +3,7 @@
 
 <head>
     @include('admin.css')
+
 </head>
 
 <body>
@@ -56,15 +57,86 @@
                 <div
                     class="d-md-flex justify-content-md-between align-items-md-center py-3 pt-md-3 pb-md-0 text-center text-md-start">
 
+                    <!-- Dynamic Table with Export Buttons -->
+                    <div class="block block-rounded">
+                        {{-- message-container --}}
+                        @if (session()->has('message'))
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <p class="mb-0">{{ session()->get('message') }}!!!</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close">X</button>
+                            </div>
+                        @endif
+                        {{-- End message-container --}}
+                        <div class="block-header block-header-default">
+                            <h3 class="block-title" style="text-align: center">
+                                All Your Favorite Contacts
+                            </h3>
+                        </div>
 
+                        <table class="table table-bordered table-striped table-vcenter">
+                            <thead>
+                                <tr>
+
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>FB Links</th>
+                                    <th>IG Links</th>
+                                    <th>image</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody class="allcont">
+                                @foreach ($favorite as $fav)
+                                    <tr>
+                                        <td>{{ $fav->name }}</td>
+                                        <td>{{ $fav->phone }}</td>
+                                        <td>{{ $fav->email }}</td>
+                                        <td>{{ $fav->address }}</td>
+                                        <td>{{ $fav->fb_id }}</td>
+                                        <td>{{ $fav->ig_id }}</td>
+                                        <td>
+                                            <img height="80px" width="80px" src="contactimage/{{ $fav->image }}">
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+
+                                                <a href="{{ url('remove_favorite', $fav->id) }}"
+                                                    onclick="return confirm('Are You Sure Want To Delete This???')">
+                                                    <button type="button" class="btn btn-sm btn-alt-secondary"
+                                                        data-bs-toggle="tooltip" title="Remove Favorite">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                </a>
+
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                @endforeach
+                            </tbody>
+
+                            <tbody id="tbody" class="searchdat"></tbody>
+                        </table>
+
+                    </div>
                 </div>
-            </div>
-        </main>
-        <!-- END Main Container -->
+                <!-- END Dynamic Table with Export Buttons -->
 
-        <!-- Footer -->
-        @include('admin/footer')
-        <!-- END Footer -->
+            </div>
+    </div>
+
+    </main>
+    <!-- END Main Container -->
+
+    <!-- Footer -->
+    @include('admin/footer')
+    <!-- END Footer -->
     </div>
     <!-- END Page Container -->
 

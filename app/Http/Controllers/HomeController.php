@@ -118,8 +118,9 @@ class HomeController extends Controller
     //favorite_contacts_show
     public function favorite_contacts()
     {
+        $favorite = favoritecontact::all();
         
-        return view('admin.favorite_contacts');
+        return view('admin.favorite_contacts', compact('favorite'));
     }
 
     //add favorite contact
@@ -139,5 +140,12 @@ class HomeController extends Controller
         $favorite->contact_id  = $contact->id;
         $favorite->save();
         return redirect()->back()->with('message', 'Contact Added to Favorite Successfully');
+    }
+    //delete favorite contact
+    public function remove_favorite($id)
+    {
+        $favorite = favoritecontact::find($id);
+        $favorite->delete();
+        return redirect()->back()->with('message', 'Favorite Contact Removed Successfully');
     }
 }
