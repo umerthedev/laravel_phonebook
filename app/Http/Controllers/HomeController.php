@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\contactlist;
+use App\Models\favoritecontact;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -119,5 +120,24 @@ class HomeController extends Controller
     {
         
         return view('admin.favorite_contacts');
+    }
+
+    //add favorite contact
+    public function addToFav(Request $request,$id)
+    {
+        $user = Auth::user();
+        $contact = contactlist::find($id);
+        $favorite = new favoritecontact();
+        $favorite->name = $contact->name;
+        $favorite->email = $contact->email;
+        $favorite->address = $contact->address;
+        $favorite->phone = $contact->phone;
+        $favorite->image = $contact->image;
+        $favorite->user_id = $user->id;
+        $favorite->fb_id = $contact->fb_id;
+        $favorite->ig_id = $contact->ig_id;
+        $favorite->contact_id  = $contact->id;
+        $favorite->save();
+        return redirect()->back()->with('message', 'Contact Added to Favorite Successfully');
     }
 }

@@ -40,6 +40,8 @@ Route::post('/update_contact/{id}',[HomeController::class,'update_contact']);
 Route::get('/delete_con/{id}',[HomeController::class,'delete_con']);
 //search contact
 Route::get('/search_contact',[HomeController::class,'search_contact']);
-//favorite_contacts
+//favorite_contacts_show
 Route::get('/favorite_contacts',[HomeController::class,'favorite_contacts']);
+//add favorite
+Route::post('/addToFav/{id}',[HomeController::class,'addToFav']);
 

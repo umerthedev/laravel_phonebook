@@ -125,12 +125,14 @@
                                                         data-bs-toggle="tooltip" title="Delete">
                                                         <i class="fa fa-times"></i>
                                                     </button></a>
-                                                <a href="{{ url('delete_con', $con->id) }}"
-                                                    onclick="return confirm('Are You Sure Want To Delete This???')">
-                                                    <button type="button" class="btn btn-sm btn-alt-secondary"
+                                                <form action="{{ url('addToFav', $con->id) }}" method="POST">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-sm btn-alt-secondary"
                                                         data-bs-toggle="tooltip" title="Add Favorite">
                                                         <i class="fa fa-bookmark" aria-hidden="true"></i>
-                                                    </button></a>
+                                                    </button>
+                                                </form>
+
                                             </div>
                                         </td>
 
