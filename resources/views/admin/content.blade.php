@@ -23,11 +23,11 @@
                         <i class="fa fa-users fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Total Contacts</div>
+                    <div class="text-muted mb-3">{{ $totalcon }}</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
-                    <a class="fw-medium" href="javascript:void(0)">
+                    <a class="fw-medium" href="{{ url('show_contact') }}">
                         Total Contacts
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
@@ -41,11 +41,11 @@
                         <i class="fa fa-level-up-alt fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Favorite Contacts</div>
+                    <div class="text-muted mb-3">{{ $totalfav }}</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
-                    <a class="fw-medium" href="">
+                    <a class="fw-medium" href="{{ url('favorite_contacts') }}">
                         Favorite Contacts
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
@@ -59,11 +59,11 @@
                         <i class="fa fa-chart-line fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3"></div>
+                    <div class="text-muted mb-3">Read Our Terms & Conditions</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
-                    <a class="fw-medium" href="">
+                    <a class="fw-medium" href="#">
                         Lifetime Asscess
                         <i class="fa fa-arrow-right ms-1 opacity-25"></i>
                     </a>
@@ -77,7 +77,7 @@
                         <i class="fa fa-wallet fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">Total Appointments</div>
+                    <div class="text-muted mb-3">End to end encrypted</div>
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">

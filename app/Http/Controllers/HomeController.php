@@ -12,7 +12,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('admin.home');
+        $totalcon = contactlist::all()->count();
+        $totalfav = favoritecontact::all()->count();
+        return view('admin.home',compact('totalcon','totalfav'));
     }
     public function home()
     {
