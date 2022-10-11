@@ -51,7 +51,7 @@ class HomeController extends Controller
     public function show_contact()
     {
         $user = Auth::user();
-        $contact = contactlist::where('user_id',$user->id)->get();
+        $contact = contactlist::where('user_id',$user->id)->orderBy('name', 'asc')->get();
         return view('admin.show_contact',compact('contact'));
     }
     
@@ -118,7 +118,14 @@ class HomeController extends Controller
     //favorite_contacts_show
     public function favorite_contacts()
     {
-        $favorite = favoritecontact::all();
+        $favorite = favoritecontact::orderBy('name', 'asc')->get();;
+        
+        return view('admin.favorite_contacts', compact('favorite'));
+    }
+    //descending order
+    public function dese_or()
+    {
+        $favorite = favoritecontact::orderBy('name', 'desc')->get();;
         
         return view('admin.favorite_contacts', compact('favorite'));
     }
@@ -147,5 +154,12 @@ class HomeController extends Controller
         $favorite = favoritecontact::find($id);
         $favorite->delete();
         return redirect()->back()->with('message', 'Favorite Contact Removed Successfully');
+    }
+    //asending order
+    public function dese()
+    {
+        $user = Auth::user();
+        $contact = contactlist::where('user_id',$user->id)->orderBy('name', 'desc')->get();
+        return view('admin.show_contact',compact('contact'));
     }
 }

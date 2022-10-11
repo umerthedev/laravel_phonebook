@@ -72,6 +72,19 @@
                             <h3 class="block-title" style="text-align: center">
                                 All Your Favorite Contacts
                             </h3>
+                            <div class="block-header block-header-default">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort By
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ url('favorite_contacts') }}">Ascending</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('dese_or') }}">Descending</a></li>
+
+                                </ul>
+                            </div>
                         </div>
 
                         <table class="table table-bordered table-striped table-vcenter">

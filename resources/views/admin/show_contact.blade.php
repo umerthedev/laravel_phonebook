@@ -56,7 +56,6 @@
             <div class="content">
                 <div
                     class="d-md-flex justify-content-md-between align-items-md-center py-3 pt-md-3 pb-md-0 text-center text-md-start">
-
                     <!-- Dynamic Table with Export Buttons -->
                     <div class="block block-rounded">
                         {{-- message-container --}}
@@ -72,6 +71,18 @@
                             <h3 class="block-title" style="text-align: center">
                                 All Your Contacts
                             </h3>
+                            <div class="block-header block-header-default">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort By
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ url('show_contact') }}">Ascending</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('dese') }}">Descending</a></li>
+
+                                </ul>
+                            </div>
                         </div>
 
                         {{-- <div class="block-content block-content-full">
@@ -83,8 +94,8 @@
                             <div id="datatable">
                             </div> --}}
                         <!-- DataTables init on table by adding .js-dataTable-buttons class, functionality is initialized in js/pages/be_tables_datatables.min.js which was auto compiled from _js/pages/be_tables_datatables.js -->
-                        {{-- <table class="table table-bordered table-striped table-vcenter js-dataTable-buttons"> --}}
-                        <table class="table table-bordered table-striped table-vcenter">
+                        <table class="table table-bordered table-striped table-vcenter js-dataTable-buttons">
+                            {{-- <table class="table table-bordered table-striped table-vcenter"> --}}
                             <thead>
                                 <tr>
 

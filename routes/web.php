@@ -46,4 +46,8 @@ Route::get('/favorite_contacts',[HomeController::class,'favorite_contacts']);
 Route::post('/addToFav/{id}',[HomeController::class,'addToFav']);
 //remove favorite
 Route::get('/remove_favorite/{id}',[HomeController::class,'remove_favorite']);
+//asecending order
+Route::get('/dese',[HomeController::class,'dese']);
+//descending order
+Route::get('/dese_or',[HomeController::class,'dese_or']);
 
