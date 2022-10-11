@@ -136,6 +136,9 @@
 
                             <tbody id="tbody" class="searchdat"></tbody>
                         </table>
+                        <div class="dataTables_info">
+                            {!! $favorite->links() !!}
+                        </div>
 
                     </div>
                 </div>

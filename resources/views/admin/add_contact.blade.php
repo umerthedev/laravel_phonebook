@@ -83,8 +83,8 @@
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Email</label>
-                                            <input type="email" class="form-control" id="example-email-input"
-                                                name="email" placeholder="Email">
+                                            <input type="text" class="form-control" id="example-email-input"
+                                                name="email" placeholder="You can add multiple emails">
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Address</label>
@@ -94,7 +94,7 @@
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Phone</label>
                                             <input type="text" class="form-control" id="example-email-input"
-                                                name="phone" placeholder="Phone number" required>
+                                                name="phone" placeholder="You can add multiple phone number" required>
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Facebook ID</label>

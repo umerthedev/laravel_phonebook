@@ -85,7 +85,7 @@
                                         </div>
                                         <div class="mb-2">
                                             <label class="form-label" for="example-email-input">Email</label>
-                                            <input type="email" class="form-control" id="example-email-input"
+                                            <input type="text" class="form-control" id="example-email-input"
                                                 name="email" placeholder="Email" value="{{ $contact->email }}">
                                         </div>
                                         <div class="mb-2">

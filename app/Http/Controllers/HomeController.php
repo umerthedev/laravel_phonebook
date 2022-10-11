@@ -53,7 +53,7 @@ class HomeController extends Controller
     public function show_contact()
     {
         $user = Auth::user();
-        $contact = contactlist::where('user_id',$user->id)->orderBy('name', 'asc')->get();
+        $contact = contactlist::where('user_id',$user->id)->orderBy('name', 'asc')->paginate(5);;
         return view('admin.show_contact',compact('contact'));
     }
     
@@ -120,7 +120,7 @@ class HomeController extends Controller
     //favorite_contacts_show
     public function favorite_contacts()
     {
-        $favorite = favoritecontact::orderBy('name', 'asc')->get();;
+        $favorite = favoritecontact::orderBy('name', 'asc')->paginate(5);;;
         
         return view('admin.favorite_contacts', compact('favorite'));
     }
