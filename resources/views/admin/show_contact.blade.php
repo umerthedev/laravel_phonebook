@@ -153,9 +153,9 @@
 
                             <tbody id="tbody" class="searchdat"></tbody>
                         </table>
-                        <div class="dataTables_info">
+                        {{-- <div class="dataTables_info">
                             {!! $contact->links() !!}
-                        </div>
+                        </div> --}}
                         <script type="text/javascript">
                             $('#datatable-search-input').on('keyup', function() {
                                 $value = $(this).val();
