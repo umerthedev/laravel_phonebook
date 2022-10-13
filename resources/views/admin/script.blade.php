@@ -13,7 +13,8 @@
 <script src="assets/js/dashmix.app.min.js"></script>
 
 <!-- jQuery (required for DataTables plugin) -->
-<script src="assets/js/lib/jquery.min.js"></script>
+<script src="admin_assets/assets/js/lib/jquery.min.js"></script>
+
 
 <!-- Page JS Plugins -->
 <script src="admin_assets/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
@@ -29,4 +30,4 @@
 <script src="admin_assets/assets/js/plugins/datatables-buttons/buttons.html5.min.js"></script>
 
 <!-- Page JS Code -->
-<script src="assets/js/pages/be_tables_datatables.min.js"></script>
+{{-- <script src="admin_assets/assets/js/pages/be_tables_datatables.min.js"></script> --}}

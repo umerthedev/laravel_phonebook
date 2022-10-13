@@ -23,7 +23,8 @@
                         <i class="fa fa-users fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">{{ $totalcon }}</div>
+                    <div class="text-muted mb-3">Your Data is safe</div>
+                    {{-- <div class="text-muted mb-3">{{ $totalcon }}</div> --}}
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">
@@ -41,7 +42,8 @@
                         <i class="fa fa-level-up-alt fa-lg text-primary"></i>
                     </div>
                     <div class="fs-1 fw-bold"></div>
-                    <div class="text-muted mb-3">{{ $totalfav }}</div>
+                    <div class="text-muted mb-3">Your Data is safe</div>
+                    {{-- <div class="text-muted mb-3">{{ $totalfav }}</div> --}}
 
                 </div>
                 <div class="block-content block-content-full block-content-sm bg-body-light fs-sm">

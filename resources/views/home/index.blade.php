@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('Home.css')
+    @include('home.css')
 
 </head>
 
@@ -19,30 +19,30 @@
 
 
     <!-- MENU -->
-    @include('Home.header')
+    @include('home.header')
 
 
     <!-- HOME -->
-    @include('Home.slider')
+    @include('home.slider')
 
 
 
 
     <!-- contact -->
-    @include('Home.yourcon')
+    @include('home.yourcon')
 
 
     <!-- TESTIMONIAL -->
 
-    @include('Home.review')
+    @include('home.review')
 
 
     <!-- FOOTER -->
-    @include('Home.footer')
+    @include('home.footer')
 
 
     <!-- SCRIPTS -->
-    @include('Home.script')
+    @include('home.script')
 
 </body>
 

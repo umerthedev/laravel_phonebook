@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2022 at 03:58 PM
+-- Generation Time: Oct 12, 2022 at 04:05 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -54,7 +54,8 @@ INSERT INTO `contactlists` (`id`, `name`, `email`, `address`, `phone`, `image`, 
 (28, 'Dr B. Sick', 'designguruam@gmail.com', '123 kazipara, Mirpur Dhaka', '4343434534', '1665418322.PNG', 'amanullah', 'amanullah', '1', '0', '2022-10-10 10:12:02', '2022-10-10 10:12:02'),
 (29, 'Ribol', 'ribol@gmail.com, umer@gmail.com', '123 kazipara, Mirpur Dhaka', '01765678976, 013224244', '1665495699.jpg', 'amanullah', 'amanullah', '1', '0', '2022-10-11 07:41:39', '2022-10-11 07:45:32'),
 (30, 'sohan', 'sohan@gmail.com', 'komolapur, dhaka', '01765678976', '1665496557.jpg', 'amanullah', 'asdasd', '1', '0', '2022-10-11 07:55:57', '2022-10-11 07:55:57'),
-(31, 'akash', 'akash@gmail.com', 'kazipara, mirpur,dhaka', '0156789544', '1665496601.jpg', 'Amahamudumer', 'asdasssa', '1', '0', '2022-10-11 07:56:41', '2022-10-11 07:56:41');
+(31, 'akash', 'akash@gmail.com', 'kazipara, mirpur,dhaka', '0156789544', '1665496601.jpg', 'Amahamudumer', 'asdasssa', '1', '0', '2022-10-11 07:56:41', '2022-10-11 07:56:41'),
+(32, 'imran', 'adminas@gmail.com', '123 kazipara, Mirpur Dhaka', '01765678976, 013224244554', '1665574887.jpg', 'Amahamudumer', 'Amahamudumer', '1', '0', '2022-10-12 05:41:27', '2022-10-12 05:41:27');
 
 -- --------------------------------------------------------
 
@@ -100,10 +101,10 @@ CREATE TABLE `favoritecontacts` (
 INSERT INTO `favoritecontacts` (`id`, `name`, `email`, `address`, `phone`, `image`, `fb_id`, `ig_id`, `user_id`, `contact_id`, `created_at`, `updated_at`) VALUES
 (4, 'Omar Faruk', 'cute@hackermail.com', '123 kazipara, Mirpur Dhaka', '01923409799', '1665316140.PNG', 'Amahamudumer', 'Amahamudumer', '1', '25', '2022-10-10 11:25:16', '2022-10-10 11:25:16'),
 (5, 'amanullah', 'amanullah@gmail.com', '123 kazipara, Mirpur Dhaka', '01765678976', '1665337314.jpg', 'amanullah', 'amanullah', '1', '26', '2022-10-10 11:25:18', '2022-10-10 11:25:18'),
-(7, 'Manegment apple', 'admin@gmail.com', 'dhanmondi, dhaka', '01765678976', '1665418214.jpg', 'asdsad', 'Amahamudumer', '1', '27', '2022-10-11 07:52:53', '2022-10-11 07:52:53'),
 (10, 'Dr B. Sick', 'designguruam@gmail.com', '123 kazipara, Mirpur Dhaka', '4343434534', '1665418322.PNG', 'amanullah', 'amanullah', '1', '28', '2022-10-11 07:54:39', '2022-10-11 07:54:39'),
 (11, 'akash', 'akash@gmail.com', 'kazipara, mirpur,dhaka', '0156789544', '1665496601.jpg', 'Amahamudumer', 'asdasssa', '1', '31', '2022-10-11 07:57:01', '2022-10-11 07:57:01'),
-(12, 'sohan', 'sohan@gmail.com', 'komolapur, dhaka', '01765678976', '1665496557.jpg', 'amanullah', 'asdasd', '1', '30', '2022-10-11 07:57:06', '2022-10-11 07:57:06');
+(12, 'sohan', 'sohan@gmail.com', 'komolapur, dhaka', '01765678976', '1665496557.jpg', 'amanullah', 'asdasd', '1', '30', '2022-10-11 07:57:06', '2022-10-11 07:57:06'),
+(13, 'imran', 'adminas@gmail.com', '123 kazipara, Mirpur Dhaka', '01765678976, 013224244554', '1665574887.jpg', 'Amahamudumer', 'Amahamudumer', '1', '32', '2022-10-12 05:42:18', '2022-10-12 05:42:18');
 
 -- --------------------------------------------------------
 
@@ -182,8 +183,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('pB9blsJFfnTlqJ50ri1FFQ2vazdJTXedds8X1vxJ', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNmVLYkQ4b0dRcUtPRGhvN2xVV2NJejNtZWg1QkNDcU9sRzBjSmoxYiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjI6Imh0dHA6Ly9sb2NhbGhvc3QvbGFyYXZlbC9sYXJhdmVsX3Bob25lYm9vay9wdWJsaWMvc2hvd19jb250YWN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1665488278),
-('WrXccrSr4lHfJNVhg24HhFAUGquR2ou6irJT6TYa', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiZ2gxTXVwc3F3NFNtNmZ2R3dta0h6MzhvS05iaUU3dHpVTlVWMjFzbSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTQ6Imh0dHA6Ly9sb2NhbGhvc3QvbGFyYXZlbC9sYXJhdmVsX3Bob25lYm9vay9wdWJsaWMvSG9tZSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1665496685);
+('Nwn0QEU6fgQX11hKGt0sb2c6Fe8xWNLaAPfbJSFq', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiT0dIaXFaVFRFazh0QnlFbTBWNGt3ank1aTNObDBSOTVaS0Qwb0dVTSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjI6Imh0dHA6Ly9sb2NhbGhvc3QvbGFyYXZlbC9sYXJhdmVsX3Bob25lYm9vay9wdWJsaWMvc2hvd19jb250YWN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1665583479);
 
 -- --------------------------------------------------------
 
@@ -282,7 +282,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `contactlists`
 --
 ALTER TABLE `contactlists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -294,7 +294,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `favoritecontacts`
 --
 ALTER TABLE `favoritecontacts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `migrations`

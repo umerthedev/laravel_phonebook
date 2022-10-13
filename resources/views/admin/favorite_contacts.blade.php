@@ -104,7 +104,8 @@
                             </thead>
 
                             <tbody class="allcont">
-                                @foreach ($favorite as $fav)
+                                {{-- @foreach ($favorite as $fav) --}}
+                                @forelse ($favorite as $fav)
                                     <tr>
                                         <td>{{ $fav->name }}</td>
                                         <td>{{ $fav->phone }}</td>
@@ -131,7 +132,11 @@
                                         </td>
 
                                     </tr>
-                                @endforeach
+                                @empty
+                                    <tr>
+                                        <td colspan="8" style="text-align: center">No Data Found</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
 
                             <tbody id="tbody" class="searchdat"></tbody>

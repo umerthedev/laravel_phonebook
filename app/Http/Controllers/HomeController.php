@@ -120,13 +120,16 @@ class HomeController extends Controller
     //favorite_contacts_show
     public function favorite_contacts()
     {
-        $favorite = favoritecontact::orderBy('name', 'asc')->paginate(5);;;
+        // $favorite = favoritecontact::orderBy('name', 'asc')->paginate(5);
+        $user = Auth::user();
+        $favorite = favoritecontact::where('user_id',$user->id)->orderBy('name', 'asc')->paginate(5);
         
         return view('admin.favorite_contacts', compact('favorite'));
     }
     //descending order
     public function dese_or()
     {
+        
         $favorite = favoritecontact::orderBy('name', 'desc')->get();;
         
         return view('admin.favorite_contacts', compact('favorite'));

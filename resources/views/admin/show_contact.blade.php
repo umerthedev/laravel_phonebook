@@ -112,7 +112,8 @@
                             </thead>
 
                             <tbody class="allcont">
-                                @foreach ($contact as $con)
+                                @forelse ($contact as $con)
+                                    {{-- @foreach ($contact as $con) --}}
                                     <tr>
                                         <td>{{ $con->name }}</td>
                                         <td>{{ $con->phone }}</td>
@@ -146,9 +147,12 @@
 
                                             </div>
                                         </td>
-
                                     </tr>
-                                @endforeach
+                                @empty
+                                    <tr>
+                                        <td colspan="8" style="text-align: center">No Data Found</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
 
                             <tbody id="tbody" class="searchdat"></tbody>
